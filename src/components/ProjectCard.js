@@ -7,7 +7,7 @@ const Card = styled.div`
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 300px;
+  width: 80%;
   margin: 1rem;
   transition: transform 0.2s;
   &:hover {
@@ -26,16 +26,16 @@ const ProjectDetails = styled.div`
 `;
 
 const ProjectCard = ({ project }) => {
-    return (
-        <Card>
-            <ProjectImage src={project.image} alt={project.name} />
-            <ProjectDetails>
-                <h3>{project.name}</h3>
-                <p>{project.description}</p>
-                <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
-            </ProjectDetails>
-        </Card>
-    );
+  return (
+    <Card>
+      <ProjectImage src={project.image} alt={project.name} />
+      <ProjectDetails>
+        <h3>{project.name}</h3>
+        <p>{project.description}</p>
+        <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+      </ProjectDetails>
+    </Card>
+  );
 };
 
 export default ProjectCard;
