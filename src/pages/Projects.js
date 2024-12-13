@@ -1,14 +1,6 @@
 // src/pages/Projects.js
 import React from 'react';
-import styled from 'styled-components';
 import ProjectCard from '../components/ProjectCard';
-
-const ProjectsContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 2rem;
-`;
 
 const Projects = () => {
     const projects = [
@@ -27,11 +19,11 @@ const Projects = () => {
     ];
 
     return (
-        <ProjectsContainer>
+        <div className="projects-container">
             {projects.map((project, index) => (
                 <ProjectCard key={index} project={project} />
             ))}
-        </ProjectsContainer>
+        </div>
     );
 };
 
