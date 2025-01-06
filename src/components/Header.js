@@ -1,17 +1,33 @@
-// src/components/Header.js
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import '../styles/Header.css';
 
 const Header = () => {
-  return (
-    <header className="header-wrapper">
-      <h1>Kolby Boesel</h1>
-      <nav className="nav">
-        <Link to="/">Home</Link>
-        <Link to="/projects">Projects</Link>
-      </nav>
-    </header>
-  );
+    const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setDropdownOpen((prev) => !prev);
+    };
+
+    return (
+        <header className="header-wrapper">
+            <h2>Kolby Boesel</h2>
+            <button className="menu-toggle" onClick={toggleDropdown}>
+                ☰
+            </button>
+            <nav className={`nav ${isDropdownOpen ? 'open' : 'closed'}`}>
+                <a href="mailto:kolbyzboesel@gmail.com">Email</a>
+                <a href="https://github.com/kolbyboesel" target="_blank" rel="noreferrer">
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/kolby-boesel" target="_blank" rel="noreferrer">
+                    LinkedIn
+                </a>
+                <a href="/Kolby_Resume.pdf" target="_blank" rel="noreferrer">
+                    Resume
+                </a>
+            </nav>
+        </header>
+    );
 };
 
 export default Header;
