@@ -11,10 +11,16 @@ const Header = () => {
     return (
         <header className="header-wrapper">
             <h2>Kolby Boesel</h2>
-            <button className="menu-toggle" onClick={toggleDropdown}>
-                ☰
+            <button
+                className={`menu-toggle ${isDropdownOpen ? 'open' : ''}`}
+                onClick={toggleDropdown}
+                aria-label="Menu Toggle"
+            >
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
             </button>
-            <nav className={`nav ${isDropdownOpen ? 'open' : 'closed'}`}>
+            <nav className={`nav ${isDropdownOpen ? 'open' : ''}`}>
                 <a href="mailto:kolbyzboesel@gmail.com">Email</a>
                 <a href="https://github.com/kolbyboesel" target="_blank" rel="noreferrer">
                     GitHub
