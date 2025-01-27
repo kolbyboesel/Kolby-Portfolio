@@ -29,49 +29,34 @@ const Experience = () => {
                 </div>
             </section>
 
-            {/* Professional Experience Section */}
-            <section id="experience" className="section experience-section">
-                <h2>Professional Experience</h2>
-                <div className="experience-details">
-                    <div className="experience-item">
-                        <p>
-                            <strong>May 2024 – Present</strong>
-                            <br />
-                            <em>Software Development Intern</em> - QuadMed, Remote
-                        </p>
-                        <ul>
-                            <li>
-                                Developed Microsoft Power Apps to transition existing company processes to a
-                                digital environment.
-                            </li>
-                            <li>
-                                Utilized Microsoft PowerBI to create reports and dashboards for data modeling,
-                                visualizing project progress, and assessing value.
-                            </li>
-                            <li>
-                                Implemented an automation process using MS Flow, moving data from SQL Server to
-                                Microsoft’s Dataverse.
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="experience-item">
-                        <p>
-                            <strong>June 2023 – May 2024</strong>
-                            <br />
-                            <em>Variable Imaging Programming Intern</em> - Quad, Sussex, WI
-                        </p>
-                        <ul>
-                            <li>
-                                Produced graphics and layouts for direct mail campaigns based on customer
-                                requests.
-                            </li>
-                            <li>
-                                Ensured graphics functionality for datasets containing millions of records.
-                            </li>
-                        </ul>
+            {/* Timeline Section */}
+            <section className="section timeline-section">
+                <h2>Experience</h2>
+                <div>
+                    <div className="timeline-wrapper">
+                        <div className="timeline-item">
+                            <img src="/quadmed_logo.jpeg" className='timeline-item-icon' alt="QuadMed Logo" />
+                            <div className="timeline-content">
+                                <p><strong>QuadMed</strong></p>
+                                <p><strong>Software Development Intern</strong></p>
+                                <p>I was immmersed in the Microsoft Power Platform world, where I developed applications using Microsoft Power Apps and built reports to analyze company efficiency using PowerBI. I also used Microsoft Power Automate to improve automation processes throughout the company.</p>
+                                <p><em>May 2024 - Present</em></p>
+                            </div>
+                        </div>
+
+                        <div className="timeline-item">
+                            <img src="/quad_logo.png" className='timeline-item-icon' alt="QuadMed Logo" />
+                            <div className="timeline-content">
+                                <p><strong>Quad</strong></p>
+                                <p><strong>Variable Imaging Programming Intern</strong></p>
+                                <p>I worked with a variety of external companies around the world to execute their recurring direct mail campaigns. I used Inspire Designer to create graphics which would be functional for millions of records based on client and mailing specifications.</p>
+                                <p><em>June 2023 - May 2024</em></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
+
 
             {/* Education Section */}
             <section id="education" className="section education-section">

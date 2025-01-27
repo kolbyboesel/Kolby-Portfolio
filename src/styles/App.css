@@ -58,6 +58,14 @@ button:hover {
   margin: 0.5rem !important;
 }
 
+.header-content h2:hover {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: lightgray;
+  border-bottom: 2px solid lightgray;
+  margin: 0.5rem !important;
+}
+
 .menu-toggle {
   display: none;
 }
@@ -113,6 +121,15 @@ button:hover {
     opacity: 1;
     max-height: 500px; /* Ensures smooth dropdown animation */
   }
+
+  .timeline-content {
+    position: relative;
+    margin-left: 15px!important;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 }
 
 /* Footer Styles */
@@ -160,27 +177,59 @@ button:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.education-section ul,
-.experience-section ul {
-  margin: 0.5rem 0;
-  padding-left: 1.5rem;
+.timeline-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
-.education-details,
-.experience-details {
-  margin-top: 1rem;
+.timeline-wrapper::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #002060; 
 }
 
-.experience-item {
-  margin-bottom: 1.5rem;
+.timeline-item {
+  padding-bottom: 40px;
+  display: flex;
 }
 
+.timeline-item-icon {
+  position: relative;
+  top: 20px;
+  left: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+}
+
+.timeline-content {
+  position: relative;
+  margin-left: 40px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
 /* Projects Styles */
 .projects-section {
   text-align: center;
 }
 
-.projects-section h2 {
+.section h2 {
   text-align: left;
 }
 

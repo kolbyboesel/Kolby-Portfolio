@@ -4,7 +4,7 @@ import Projects from '../components/Projects';
 
 const Home = () => {
   return (
-    <div className="content-wrapper">
+    <div >
 
       {/* Projects Section */}
       <Projects />
