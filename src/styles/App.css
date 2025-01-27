@@ -201,11 +201,13 @@ button:hover {
 .timeline-item-icon {
   position: relative;
   top: 20px;
-  left: 0;
+  left: -5px;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .timeline-content {
@@ -215,6 +217,7 @@ button:hover {
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: -webkit-fill-available;
 }
 
 .timeline-content h3 {

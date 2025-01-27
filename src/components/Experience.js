@@ -59,32 +59,36 @@ const Experience = () => {
 
 
             {/* Education Section */}
-            <section id="education" className="section education-section">
+            <section className="section timeline-section">
                 <h2>Education</h2>
-                <div className="education-details">
-                    <p>
-                        <strong>September 2021 – May 2025</strong>
-                        <br />
-                        University of Wisconsin - Madison
-                    </p>
-                    <p>
-                        <strong>Degrees and Certificates</strong>
-                    </p>
-                    <ul>
-                        <li>Bachelor of Science, Data Science</li>
-                        <li>Bachelor of Science, Information Science</li>
-                        <li>Certificate, Computer Science</li>
-                    </ul>
-                    <p>
-                        <strong>Relevant Coursework</strong>
-                    </p>
-                    <ul>
-                        <li>Programming I - III (Completed in Java and Python variants)</li>
-                        <li>Machine Learning</li>
-                        <li>Optimization</li>
-                        <li>Data Science Modeling</li>
-                        <li>Database Design</li>
-                    </ul>
+                <div>
+                    <div className="timeline-wrapper">
+                        <div className="timeline-item">
+                            <img src="/uwmadison_logo.png" className='timeline-item-icon' alt="QuadMed Logo" />
+                            <div className="timeline-content">
+                                <p><strong>University of Wisconsin - Madison</strong></p>
+                                <p>
+                                    <strong>Degrees and Certificates</strong>
+                                </p>
+                                <ul>
+                                    <li>Bachelor of Science, Data Science</li>
+                                    <li>Bachelor of Science, Information Science</li>
+                                    <li>Certificate, Computer Science</li>
+                                </ul>
+                                <p>
+                                    <strong>Relevant Coursework</strong>
+                                </p>
+                                <ul>
+                                    <li>Programming I - III (Completed in Java and Python variants)</li>
+                                    <li>Machine Learning</li>
+                                    <li>Optimization</li>
+                                    <li>Data Science Modeling</li>
+                                    <li>Database Design</li>
+                                </ul>
+                                <p><em>September 2021 - May 2025</em></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
