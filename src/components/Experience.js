@@ -11,13 +11,13 @@ const Experience = () => {
                         <strong>Programming Languages</strong>
                     </p>
                     <ul>
-                        <li>Java, JavaScript, Swift, HTML, CSS, React, Python, C#</li>
+                        <li>Java, JavaScript, Swift, HTML, CSS, Python, C#</li>
                     </ul>
                     <p>
                         <strong>Technologies</strong>
                     </p>
                     <ul>
-                        <li>Microsoft Power Apps, Microsoft Power BI, Microsoft Power Automate, Git/GitHub, MongoDB, SQLite, REST APIs, Azure DevOps
+                        <li>React, Blazor, Microsoft Power Apps, Microsoft Power BI, Microsoft Power Automate, Git/GitHub, MongoDB, SQLite, REST APIs, Azure DevOps
                         </li>
                     </ul>
                     <p>
@@ -60,7 +60,7 @@ const Experience = () => {
 
             {/* Education Section */}
             <section className="section timeline-section">
-                <h2>Education</h2>
+                <h2>Education and Certificates</h2>
                 <div>
                     <div className="timeline-wrapper">
                         <div className="timeline-item">

@@ -29,6 +29,9 @@ const Header = () => {
                     {isDropdownOpen ? <FiX size={24} /> : <FiMenu size={24} />}
                 </button>
                 <nav className={`nav ${isDropdownOpen ? 'open' : ''}`}>
+                    <button onClick={() => handleNavigation('/')}>
+                        Home
+                    </button>
                     <button onClick={() => handleNavigation('/Projects')}>
                         Projects
                     </button>
