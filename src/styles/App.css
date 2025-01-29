@@ -1,47 +1,37 @@
+:root {
+  --primary-color: #002060;
+  --secondary-color: #2ecc71;
+  --text-color: #333;
+}
+
 /* General Styles */
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  color: #333;
-  background-color: #f9f9f9;
-}
-
 h2 {
-  color: #002060;
+  color: var(--primary-color);
   margin-bottom: 0.5rem;
+  font-weight: 400;
 }
 
-div {
+h3 {
+  color: white;
+  font-weight: 550;
+}
+
+a {
   text-decoration: none;
-  color: black;
-  transition: color 0.3s ease;
 }
 
-.project-preview-image {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  object-position: top;
-  margin-bottom: 25px;
+p {
+  font-weight: 200;
 }
 
-.full-width-btn:hover {
-  color: darkgray;
+li {
+  font-weight: 200;
 }
 
-.full-width-btn {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  cursor: pointer;
-}
-
-.source-link {
-  text-decoration: underline;
-  color: black;
-  transition: color 0.3s ease;
+.content-wrapper {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
 }
 
 .about-details {
@@ -59,33 +49,6 @@ div {
   color: darkgray;
 }
 
-.project-info-header {
-  margin-bottom: 10px;
-  margin-top: 25px!important;
-}
-
-.button-icon {
-  color: black;
-}
-
-.button-icon:hover {
-  color: darkgray;
-}
-
-
-button {
-  background: none;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-  color: #002060;
-  transition: color 0.3s ease;
-}
-
-button:hover {
-  color: #0047ab;
-}
-
 /* Header Styles */
 .header-wrapper {
   width: 100%;
@@ -99,23 +62,8 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #002060;
+  background-color: var(--primary-color);
   color: white;
-}
-
-.header-content h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
-  margin: 0.5rem !important;
-}
-
-.header-content h2:hover {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: lightgray;
-  border-bottom: 2px solid lightgray;
-  margin: 0.5rem !important;
 }
 
 .menu-toggle {
@@ -130,18 +78,83 @@ button:hover {
 
 .nav button,
 .nav a {
-  background-color: #002060;
+  font-weight: 400;
+  background-color: var(--primary-color);
   color: white;
   padding: 0.5rem 1rem;
-  border-radius: 4px;
-  font-weight: bold;
   text-align: center;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .nav button:hover,
-.nav a:hover {
-  background-color: white;
+.nav a:hover{
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
+.nav button.active {
+  font-weight: bold;
+  border-bottom: 2px solid white; /* Customize the active indicator */
+}
+
+.logo-div {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+}
+
+.logo {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.logo h2{
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: white;
+  margin: 0.5rem !important;
+
+}
+
+.logo:hover {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
+.logo:hover h2{
+  font-weight: bold;
+}
+
+/* Footer Styles */
+.footer-container {
+  color: var(--primary-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-links a {
   color: #002060;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
 }
 
 /* Small Screen Styles */
@@ -149,14 +162,16 @@ button:hover {
   .menu-toggle {
     display: block;
     color: white;
-
+    background-color: var(--primary-color);
+    border: none;
+    display: flex;
   }
 
   .nav {
     display: none;
     flex-direction: column;
     gap: 0.5rem;
-    background-color: #002060;
+    background-color: var(--primary-color);
     position: absolute;
     top: 100%;
     right: 0;
@@ -184,43 +199,7 @@ button:hover {
   }
 }
 
-/* Footer Styles */
-.footer-container {
-  color: #002060;
-  padding: 1rem;
-  text-align: center;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.social-links a {
-  color: #002060;
-  transition: transform 0.3s ease;
-}
-
-.social-links a:hover {
-  transform: scale(1.1);
-}
-
-/* Home Styles */
-.home-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-
-.content-wrapper {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 2rem;
-}
-
-/* Experience Styles */
+/* Timeline Styles */
 .section {
   margin-bottom: 2rem;
   padding: 2rem;
@@ -242,7 +221,7 @@ button:hover {
   top: 0;
   width: 5px;
   height: 100%;
-  background-color: #002060; 
+  background-color: var(--primary-color); 
 }
 
 .timeline-item {
@@ -265,7 +244,8 @@ button:hover {
 .timeline-content {
   position: relative;
   margin-left: 40px;
-  background-color: white;
+  margin-top: 20px;
+  background-color: var(--primary-color);
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -279,60 +259,51 @@ button:hover {
 .timeline-item:last-child {
   margin-bottom: 0;
 }
-/* Projects Styles */
-.projects-section {
-  text-align: center;
+
+.timeline-item p {
+  color: white;
 }
 
-.section h2 {
-  text-align: left;
+.timeline-item li {
+  color: white;
 }
 
-
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+.full-width-btn:hover {
+  color: darkgray;
 }
 
-.card {
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-
-.project-image {
+.full-width-btn {
+  display: flex;
   width: 100%;
-  height: 175px;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.project-preview-image {
+  width: 100%;
+  height: 250px;
   object-fit: cover;
   object-position: top;
+  margin-bottom: 25px;
 }
 
-.project-details {
-  padding: 1rem;
-}
-
-.project-details a {
-  display: inline-block;
-  margin-top: 0.5rem;
-  background-color: #002060;
+.source-link {
+  text-decoration: underline;
   color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  transition: color 0.3s ease;
 }
 
-.project-details a:hover {
-  background-color: lightgray;
+.project-info-header {
+  margin-bottom: 10px;
+  margin-top: 25px!important;
 }
 
-.project-details h3:hover {
-  color: lightgray;
+.button-icon {
+  color: white;
+}
+
+.button-icon:hover {
+  color: darkgray;
 }

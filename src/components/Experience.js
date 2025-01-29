@@ -4,9 +4,9 @@ const Experience = () => {
     return (
         <div className="content-wrapper">
             {/* Skills Section */}
-            <section id="education" className="section education-section">
+            <section id="skills" className="section">
                 <h2>Skills</h2>
-                <div className="education-details">
+                <div>
                     <p>
                         <strong>Programming Languages</strong>
                     </p>
@@ -30,7 +30,7 @@ const Experience = () => {
             </section>
 
             {/* Timeline Section */}
-            <section className="section timeline-section">
+            <section id="experience" className="section timeline-section">
                 <h2>Experience</h2>
                 <div>
                     <div className="timeline-wrapper">
@@ -59,7 +59,7 @@ const Experience = () => {
 
 
             {/* Education Section */}
-            <section className="section timeline-section">
+            <section id="education" className="section timeline-section">
                 <h2>Education and Certificates</h2>
                 <div>
                     <div className="timeline-wrapper">

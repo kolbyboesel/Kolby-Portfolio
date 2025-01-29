@@ -67,10 +67,6 @@ const Projects = () => {
                                             <div onClick={() => handleProjectClick(index)} className='full-width-btn'>
                                                 <FaChevronUp size={24} className='button-icon' />
                                             </div>
-                                            <h3 className='project-info-header' >Project Preview (Click to View)</h3>
-                                            <a href={project.link} target="_blank" rel="noopener noreferrer">
-                                                <img src={project.previewImage} alt={project.name} className="project-preview-image" />
-                                            </a>
                                             <h3 className='project-info-header' >More Information</h3>
                                             <p><strong>Languages:</strong> {project.languages}</p>
                                             <p><strong>Technologies:</strong> {project.technologies}</p>

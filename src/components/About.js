@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div className="content-wrapper">
             {/* Skills Section */}
-            <section id="education" className="section education-section">
+            <section id="about" className="section">
                 <h2>Hi, I'm Kolby</h2>
                 <div className="about-details">
                     <p style={{ paddingRight: '20px' }}>
