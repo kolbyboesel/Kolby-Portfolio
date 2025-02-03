@@ -25,13 +25,13 @@ const Header = () => {
                         <h2>Kolby Boesel</h2>
                     </div>
                 </a>
-                <button
+                <span
                     className={`menu-toggle ${isDropdownOpen ? 'open' : ''}`}
                     onClick={toggleDropdown}
                     aria-label="Menu Toggle"
                 >
                     {isDropdownOpen ? <FiX size={24} /> : <FiMenu size={24} />}
-                </button>
+                </span>
                 <nav className={`nav ${isDropdownOpen ? 'open' : ''}`}>
                     <span
                         onClick={() => handleNavigation('/')}
