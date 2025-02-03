@@ -76,7 +76,7 @@ li {
   transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
-.nav button,
+.nav span,
 .nav a {
   font-weight: 400;
   background-color: var(--primary-color);
@@ -87,16 +87,15 @@ li {
   border: none;
   font-size: 1rem;
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: 0.3s ease;
 }
 
-.nav button:hover,
+.nav span:hover,
 .nav a:hover{
-  font-weight: bold;
   border-bottom: 2px solid white;
 }
 
-.nav button.active {
+.nav span.active {
   font-weight: bold;
   border-bottom: 2px solid white; /* Customize the active indicator */
 }

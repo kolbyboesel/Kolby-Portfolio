@@ -33,24 +33,24 @@ const Header = () => {
                     {isDropdownOpen ? <FiX size={24} /> : <FiMenu size={24} />}
                 </button>
                 <nav className={`nav ${isDropdownOpen ? 'open' : ''}`}>
-                    <button
+                    <span
                         onClick={() => handleNavigation('/')}
                         className={location.pathname === '/' ? 'active' : ''}
                     >
                         Home
-                    </button>
-                    <button
+                    </span>
+                    <span
                         onClick={() => handleNavigation('/Projects')}
                         className={location.pathname === '/Projects' ? 'active' : ''}
                     >
                         Projects
-                    </button>
-                    <button
+                    </span>
+                    <span
                         onClick={() => handleNavigation('/Experience')}
                         className={location.pathname === '/Experience' ? 'active' : ''}
                     >
                         Experience
-                    </button>
+                    </span>
                     <a
                         href="/Kolby_Resume.pdf"
                         target="_blank"
