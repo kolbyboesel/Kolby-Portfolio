@@ -19,12 +19,12 @@ const Header = () => {
     return (
         <header className="header-wrapper">
             <div className="header-content">
-                <a href="/" className="logo">
+                <span href="/" className="logo">
                     <div className='logo-div'>
                         <img src="/logo512.png" alt="Logo" className="logo-image" />
                         <h2>Kolby Boesel</h2>
                     </div>
-                </a>
+                </span>
                 <span
                     className={`menu-toggle ${isDropdownOpen ? 'open' : ''}`}
                     onClick={toggleDropdown}

@@ -109,12 +109,15 @@ li {
   height: 40px;
   width: 40px;
   object-fit: cover;
+  
 }
 
 .logo {
   font-weight: 400;
   font-size: 1.5rem;
   color: white;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .logo h2{
@@ -122,16 +125,11 @@ li {
   font-size: 1.5rem;
   color: white;
   margin: 0.5rem !important;
-
+  transition: 0.3s ease;
 }
 
-.logo:hover {
-  font-weight: bold;
+.logo-div:hover {
   border-bottom: 2px solid white;
-}
-
-.logo:hover h2{
-  font-weight: bold;
 }
 
 /* Footer Styles */
