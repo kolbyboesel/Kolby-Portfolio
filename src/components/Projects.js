@@ -15,7 +15,7 @@ const Projects = () => {
             previewImage: '/ios_preview.jpeg',
             link: 'https://apps.apple.com/us/app/soap-scores/id6475890955',
             time: 'December 2023 - Present',
-            links: [{ name: 'App Store Link', link: 'https://apps.apple.com/us/app/soap-scores/id6475890955' }, { name: 'GitHub (Access Required)', link: 'https://github.com/kolbyboesel/SOAP-iOS-Live' }],
+            links: [{ name: 'App Store Link - Currently unavailable on App Store due to expiration of Developer membership', link: 'https://apps.apple.com/us/app/soap-scores/id6475890955' }, { name: 'GitHub (Access Required)', link: 'https://github.com/kolbyboesel/SOAP-iOS-Live' }],
         },
         {
             name: 'SOAP - Web',

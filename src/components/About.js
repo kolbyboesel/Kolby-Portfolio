@@ -8,7 +8,7 @@ const About = () => {
                 <h2>Hi, I'm Kolby</h2>
                 <div className="about-details">
                     <p style={{ paddingRight: '20px' }}>
-                        I'm a current senior at the University of Wisconsin - Madison, studying Data Science, Information Science, and Computer Science. I'm from Wauwatosa, Wisconsin, and have a passion for sports, technology, and learning new things.
+                        I'm a current senior at the University of Wisconsin - Madison, studying Data Science, Information Science, and Computer Science. I'm from Wauwatosa, Wisconsin, and have a passion for sports, technology, and learning new things. After graduation, I will be continuing with QuadMed as a Software Engineer I
                     </p>
                     <img className='headshot-image' src='/logo512.png' alt='Kolby_Headshot'></img>
                 </div>

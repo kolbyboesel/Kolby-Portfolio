@@ -28,7 +28,7 @@ const Footer = () => {
                     <FaLinkedin size={24} />
                 </a>
             </div>
-            <p>Site Last Updated: 2/3/2025</p>
+            <p>Site Last Updated: 2/27/2025</p>
         </footer>
     );
 };
